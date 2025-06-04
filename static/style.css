@@ -1,0 +1,133 @@
+body {
+  background-image: url("farm.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  margin: 0;                    
+  padding: 0;
+  min-height: 100vh;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: center;      /* vertically center */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login {
+  width: 400px;      
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 8px;                 
+  color: white;
+  /* Remove margin-left to center */
+  margin-left: 0; 
+}
+
+#heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #27ae60;              /* Your green text color */
+  -webkit-text-stroke: 1.5px black;  /* Black outline */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: default;
+  transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+}
+
+#heading:hover {
+  color: #2ecc71;
+  text-shadow: 0 0 10px #2ecc71, 0 0 20px #27ae60;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+input {
+  width: 100%;           /* Full width of container */
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-bottom: 4px solid black;
+  display: block;
+}
+
+
+button {
+  width: 100%;                /* Full width */
+  background-color: #28a745;  /* Fresh green */
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;         /* Softer rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3); /* subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;   /* Darker green on hover */
+  box-shadow: 0 6px 12px rgba(33, 136, 56, 0.5); /* stronger shadow */
+  transform: translateY(-3px); /* slight lift effect */
+}
+
+button:active {
+  background-color: #1e7e34;   /* Even darker green on click */
+  box-shadow: 0 3px 6px rgba(30, 126, 52, 0.6);
+  transform: translateY(-1px);
+}
+
+
+
+#predi {
+  margin-left: 0;
+  max-width: 420px;
+  background: linear-gradient(135deg, #6bcf81, #3a8d4e);
+  color: #fff;
+  padding: 20px 30px 20px 45px; /* added left padding for tick */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  line-height: 1.4;
+  margin-top: 10px; /* reduced gap */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#predi::before {
+  content: "✔️";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+#predi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+#author {
+  position: fixed;       /* screen pe fixed rahe */
+  top: 10px;             /* thoda upar se gap */
+  right: 10px;           /* thoda right se gap */
+  color: black;          /* black text */
+  font-weight: bold;     /* bold */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);  /* thoda transparent white background for readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+  user-select: none;     /* accidentally select na ho */
+  z-index: 9999;         /* hamesha upar dikhe */
+}
+
